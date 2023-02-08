@@ -1,25 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class HelloWorld : MonoBehaviour
 
+
+public class ControlCuadrado : MonoBehaviour
 {
-    [SerializeField] private string mensaje;
+    HelloWorld helloWorld; 
     // Start is called before the first frame update
     void Start()
-    {
-        
+    { 
+       helloWorld = helloWorld.GetComponent<HelloWorld>();
+       helloWorld.Saludar();
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    public void Saludar()
-    {
-        Debug.Log(mensaje);
     }
 }

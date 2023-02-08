@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 512593789}
   - component: {fileID: 512593788}
   - component: {fileID: 512593790}
+  - component: {fileID: 512593791}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -221,6 +222,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensaje: Prueba roja
+--- !u!114 &512593791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512593787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103967b8eb401a34792129e36119ca33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +329,7 @@ GameObject:
   - component: {fileID: 605223335}
   - component: {fileID: 605223334}
   - component: {fileID: 605223336}
+  - component: {fileID: 605223337}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -403,3 +417,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensaje: Prueba amarillo
+--- !u!114 &605223337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605223333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103967b8eb401a34792129e36119ca33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
