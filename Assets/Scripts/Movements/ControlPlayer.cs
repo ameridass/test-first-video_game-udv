@@ -14,6 +14,18 @@ public class ControlPlayer : MonoBehaviour
         movement = GetComponent<Movimiento>();
     }
 
+    private void  OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Finish")
+        {
+            Debug.Log("comido");
+           // Destroy(collision.gameObject);
+
+            
+
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
