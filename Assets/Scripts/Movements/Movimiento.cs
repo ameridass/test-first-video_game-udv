@@ -71,4 +71,24 @@ public class Movimiento : MonoBehaviour
             spriteRenderer.flipX = false;
         }
     }
+    public int capacidadSalto = 0;
+    public float incrementoVelocidad = 1f;
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("GameController"))
+        {
+            capacidadSalto++;
+            maxJumps = maxJumps + capacidadSalto++;
+            other.gameObject.GetComponent<fruitcollector>().DestruirFruta();
+        }
+
+        if (other.gameObject.CompareTag("Respawn"))
+        {
+            
+            velCaminar = velCaminar + incrementoVelocidad;
+            other.gameObject.GetComponent<fruitcollector>().DestruirFruta();
+        }
+
+    }
 }

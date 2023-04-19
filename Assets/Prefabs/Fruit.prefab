@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1469804695296337225}
   - component: {fileID: -7349357726562125199}
   - component: {fileID: 4501174898594376235}
+  - component: {fileID: -2518429937072449267}
   m_Layer: 0
   m_Name: Fruit
   m_TagString: Respawn
@@ -106,3 +107,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &-2518429937072449267
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269172737655750688}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.16

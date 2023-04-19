@@ -5,25 +5,35 @@ using UnityEngine;
 
 
 public class fruitcollector : MonoBehaviour
+
 {
 
-
-    private void OnTriggerEnter2D(Collider2D other)
+    public void DestruirFruta()
     {
-
-        int jumps;
-        if (other.CompareTag("Player"))
-        {
-            GetComponent<SpriteRenderer>().enabled = false;
-
-            // Destroy(gameObject);
-
-
-            jumps = GetComponent<Movimiento>().maxJumps;
-            Debug.Log("Choque");
-            
-        }
+        Destroy(gameObject);
     }
+    //public GameObject ;
+    //public Component Movimiento;
+    //public int valorAumentar;
+
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+
+    //    int jumps;
+    //    string movimi;
+    //    if (other.CompareTag("Player"))
+    //    {
+    //        GetComponent<SpriteRenderer>().enabled = false;
+
+    //        Destroy(gameObject);
 
 
+
+    //        other.gameObject.
+    //        Debug.Log("choca");
+
+    //    }
 }
+
+
+
